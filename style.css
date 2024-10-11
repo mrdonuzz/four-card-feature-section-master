@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 5vw 0;
+    background-color: #fafafa;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1:first-child {
+    font-size: 2.6rem;
+    font-weight: 200;
+}
+
+.header h1:nth-child(2) {
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: #4c4e61;
+}
+
+.header p {
+    color: hsl(229, 6%, 66%);
+    font-size: 1.5rem;
+}
+
+.header span {
+    display: block;
+}
+
+.section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3.6rem 0;
+}
+
+.card {
+    width: 100%;
+    max-width: 30rem;
+    padding: 2.6rem;
+    border-radius: .8rem;
+    box-shadow: 0 8px 18px 0 #a3a5ae20, 0 6px 20px 0 #a3a5ae1f;
+}
+
+.card h3 {
+    font-size: 2.2rem;
+    color: #4c4e61;
+}
+
+.card p {
+    font-size: 1.2rem;
+    padding: .6rem 0;
+    color: hsl(229, 6%, 66%);
+}
+
+.card .img {
+    display: flex;
+    justify-content: end;
+}
+
+.card img {
+    padding-top: 2rem;
+}
+
+.super {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    margin-top: 2rem;
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.cal {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 415px) {
+    .container {
+        height: auto;
+        margin-top: 4rem;
+    }
+
+    .header {
+        padding: 0 2rem;
+    }
+
+    .header p {
+        margin: 1.4rem 0;
+        padding: 0 .8rem;
+    }
+
+    .header span {
+        display: inline;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 2.2rem;
+    }
+}
